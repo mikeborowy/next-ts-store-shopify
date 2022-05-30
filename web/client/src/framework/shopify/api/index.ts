@@ -1,0 +1,1 @@
+export { getShopifyAPIConfig } from "./config";

@@ -1,0 +1,19 @@
+{
+  "name": "@next-ts-store/monorepo",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": [
+    "./web/*",
+    "./web/client/*",
+    "./web/server/*"
+  ],
+  "scripts": {
+    "client:start": "npm start -w @next-ts-store/client",
+    "client:dev": "npm run dev -w @next-ts-store/client",
+    "client:build": "npm run build -w @next-ts-store/client",
+    "server:start": "npm start -w @next-ts-store/server",
+    "server:dev": "npm run dev -w @next-ts-store/server",
+    "server:build": "npm run build -w @next-ts-store/server",
+    "start": "npm run client-start & npm run server:start"
+  }
+}
