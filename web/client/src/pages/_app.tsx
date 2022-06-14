@@ -1,8 +1,8 @@
 import { DummyComponent } from "@components";
 import { LayoutProps } from "@components/shared";
-import { UIProvider } from "@contexts/UIProvider";
 import type { AppProps } from "next/app";
 import { FunctionComponent } from "react";
+import { UIProvider } from "src/context/UIProvider";
 import "../styles/globals.css";
 
 type MyAppProps = AppProps & {

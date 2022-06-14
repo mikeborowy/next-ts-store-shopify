@@ -1,6 +1,6 @@
 import { Bag, Cross } from "@components/icons";
 import { Button } from "@components/ui";
-import { useUI } from "@contexts/UIProvider";
+import { useUI } from "@context/UIProvider";
 import cn from "classnames";
 import { useState } from "react";
 // import CartItem from "../CartItem";

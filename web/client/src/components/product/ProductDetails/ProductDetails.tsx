@@ -1,14 +1,13 @@
 // import { ProductSlider, Swatch } from "@components/product";
 import { ProductSlider } from "@components/product";
 import { Button, StylingContainer, Swatch } from "@components/ui";
-import { useUI } from "@contexts/UIProvider";
+import { useUI } from "@context/UIProvider";
 import { ChoiceType, getVariant } from "@helpers";
 import { useAddItem } from "@hooks";
 import { Product } from "@models/product";
 import cn from "classnames";
 import Image from "next/image";
 import { useState } from "react";
-import { useApiProvider } from "../../../contexts/ApiProvider";
 import styles from "./ProductDetails.module.css";
 
 interface ProductDetailsProps {
@@ -17,7 +16,7 @@ interface ProductDetailsProps {
 
 export const ProductDetails = ({ product }: ProductDetailsProps) => {
   const [choices, setChoices] = useState<ChoiceType>({});
-  const api = useApiProvider();
+  // const { apiFetch, apiHooks } = useApiProvider();
 
   const [isLoading, setIsLoading] = useState(false);
 

@@ -1,7 +1,7 @@
 import { CartSidebar } from "@components/cart";
 import { Footer, Navbar, Sidebar } from "@components/shared";
-import { ApiProvider } from "@contexts/ApiProvider";
-import { useUI } from "@contexts/UIProvider";
+import { useUI } from "@context/UIProvider";
+import { ShopifyApiProvider as ApiProvider } from "@shopify/context/ShopifyApiProvider";
 import { ReactNode } from "react";
 import styles from "./Layout.module.css";
 

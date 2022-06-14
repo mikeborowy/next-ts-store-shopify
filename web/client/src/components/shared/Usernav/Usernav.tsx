@@ -1,5 +1,5 @@
 import { Bag as Cart, Heart } from "@components/icons";
-import { useUI } from "@contexts/UIProvider/UIProvider";
+import { useUI } from "@context/UIProvider/UIProvider";
 import Link from "next/link";
 import styles from "./Usernav.module.css";
 

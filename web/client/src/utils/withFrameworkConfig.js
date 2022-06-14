@@ -37,10 +37,8 @@ function withFrameworkConfig(defaultConfig = {}) {
   const tsPath = path.join(process.cwd(), "tsconfig.json");
   const tsConfig = require(tsPath);
 
-  tsConfig.compilerOptions.paths[`@${framework}`] = [
-    `src/framework/${framework}`,
-  ];
-  tsConfig.compilerOptions.paths[`@${framework}/*`] = [
+  tsConfig.compilerOptions.paths["@framework"] = [`src/framework/${framework}`];
+  tsConfig.compilerOptions.paths["@framework/*"] = [
     `src/framework/${framework}/*`,
   ];
 
