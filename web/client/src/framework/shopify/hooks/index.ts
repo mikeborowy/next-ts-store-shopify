@@ -1,9 +1,9 @@
-import { useAddToCartHandlers } from "./cart/use-add-to-cart";
+import { useAddToCart } from "./cart/use-add-to-cart";
 
-export const apiHandlers = {
+export const shopifyApiHooks = {
   cart: {
-    useAddToCartHandlers,
+    useAddToCart,
   },
 };
 
-export type APIHandlersType = typeof apiHandlers;
+export type ShopifyApiHandlersType = typeof shopifyApiHooks;

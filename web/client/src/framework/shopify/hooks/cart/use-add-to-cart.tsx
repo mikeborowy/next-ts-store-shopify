@@ -1,14 +1,18 @@
-import { APIFrameworkHandlerType } from "../../../../hooks";
+import { APIHookManagerCbReturnType } from "@hooks";
 
-export const useAddToCartHandlers: APIFrameworkHandlerType = {
-  fetchAPI: () => {
+export const useAddToCart: APIHookManagerCbReturnType = {
+  fetchAPI: (input: any) => {
     console.log("Fetching Data!");
+    return JSON.stringify(input) + "_MODIFIED";
   },
-  useAPIHook: () => {
+  useAPIHook: ({ fetch }: any) => {
     return (input: any) => {
       debugger;
+      const output = fetch(input);
+      debugger;
+
       return {
-        output: JSON.stringify(input) + "_MODIFIED",
+        output,
       };
     };
   },

@@ -1,14 +1,11 @@
 import { useAPIHookManager } from "@hooks/use-api-hook-manager";
+import { ShopifyApiHandlersType } from "../framework/shopify/hooks";
 
 // return apiHooks.cartAPI.useAPIHook();
 export const useAddItem = () => {
-  const hook = useAPIHookManager((apiHooks) => {
-    debugger;
-
-    return apiHooks.apiHandlers.cart.useAddToCartHandlers;
+  const hook = useAPIHookManager<ShopifyApiHandlersType>((apiHooks) => {
+    return apiHooks.cart.useAddToCart;
   });
 
-  debugger;
-
-  return hook?.useAPIHook();
+  return hook.useAPIHook({ fetchAPI: hook.fetchAPI });
 };

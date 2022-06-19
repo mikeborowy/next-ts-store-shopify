@@ -1,2 +1,2 @@
-export * from "./getVariant";
-export * from "./isDarkColor";
+export * from "./get-variant";
+export * from "./is-dark-color";

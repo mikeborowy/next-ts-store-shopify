@@ -14,8 +14,6 @@ interface ApiProviderProps {
 }
 
 const ApiProvider = ({ children, config: configProps }: ApiProviderProps) => {
-  debugger;
-
   const config = useMemo(() => {
     return {
       apiFetch: configProps.apiFetch,

@@ -1,10 +1,10 @@
 import { APIConfig, fetchAPI } from "@api";
-import * as frameworkHooks from "@framework/hooks";
+import { shopifyApiHooks } from "@framework/hooks";
 
 const shopifyConfig = new APIConfig({
   apiUrl: "http://localhost:4000/graphql",
   apiFetch: fetchAPI,
-  apiHooks: frameworkHooks,
+  apiHooks: shopifyApiHooks,
 });
 
 export function getShopifyAPIConfig() {

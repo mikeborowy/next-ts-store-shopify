@@ -1,16 +1,14 @@
 import { useApiProvider } from "@context/ApiProvider";
-import { APIHandlersType } from "@framework/hooks";
 
-export type APIFrameworkHandlerType = {
-  fetchAPI: () => any;
-  useAPIHook: () => any;
+export type APIHookManagerCbReturnType = {
+  fetchAPI: (input: any) => any;
+  useAPIHook: ({ fetch }: any) => any;
 };
 
-export const useAPIHookManager = (
-  cb: (apiHooks: any) => APIFrameworkHandlerType
-) => {
+export function useAPIHookManager<H = undefined>(
+  cb: (apiHooks: H) => APIHookManagerCbReturnType
+) {
   const { apiHooks } = useApiProvider();
-  debugger;
 
-  return cb(apiHooks as APIHandlersType);
-};
+  return cb(apiHooks as H);
+}
