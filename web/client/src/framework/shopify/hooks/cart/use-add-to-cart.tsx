@@ -1,14 +1,20 @@
-import { APIHookManagerCbReturnType } from "@hooks";
+import { APIMutationType } from "@hooks";
 
-export const useAddToCart: APIHookManagerCbReturnType = {
-  fetchAPI: (input: any) => {
-    console.log("Fetching Data!");
-    return JSON.stringify(input) + "_MODIFIED";
+export const useAddToCart: APIMutationType = {
+  fetchAPI: (context) => {
+    const { fetch, input } = context;
+    debugger;
+
+    const response = fetch(input);
+    debugger;
+
+    return response;
   },
-  useAPIHook: ({ fetch }: any) => {
+  useAPIHook: (context) => {
+    const { fetchAPI } = context;
+
     return (input: any) => {
-      debugger;
-      const output = fetch(input);
+      const output = fetchAPI(input);
       debugger;
 
       return {

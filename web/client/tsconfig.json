@@ -8,6 +8,8 @@
       "@api/*": ["src/api/*"],
       "@components": ["src/components"],
       "@components/*": ["src/components/*"],
+      "@constants": ["src/constants"],
+      "@constants/*": ["src/constants/*"],
       "@context": ["src/context"],
       "@context/*": ["src/context/*"],
       "@helpers": ["src/helpers"],

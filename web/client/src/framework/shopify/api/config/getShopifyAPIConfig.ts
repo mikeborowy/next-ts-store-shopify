@@ -1,8 +1,9 @@
 import { APIConfig, fetchAPI } from "@api";
 import { shopifyApiHooks } from "@framework/hooks";
+import { API_URL } from "../../../../constants/api-url";
 
 const shopifyConfig = new APIConfig({
-  apiUrl: "http://localhost:4000/graphql",
+  apiUrl: API_URL,
   apiFetch: fetchAPI,
   apiHooks: shopifyApiHooks,
 });

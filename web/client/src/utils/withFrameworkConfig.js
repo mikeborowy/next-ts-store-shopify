@@ -3,6 +3,7 @@ const fs = require("fs");
 const merge = require("deepmerge");
 const prettier = require("prettier");
 
+//shopify_local check .env.local
 const ALLOWED_FW = ["shopify", "big-commerce", "shopify_local"];
 const FALLBACK_FW = "shopify";
 

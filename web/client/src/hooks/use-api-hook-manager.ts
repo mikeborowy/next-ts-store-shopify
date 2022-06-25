@@ -1,12 +1,22 @@
+import { APIFetchType } from "@api";
 import { useApiProvider } from "@context/ApiProvider";
 
-export type APIHookManagerCbReturnType = {
+export type APIMutationContext = {
   fetchAPI: (input: any) => any;
-  useAPIHook: ({ fetch }: any) => any;
+};
+
+export type FetchAPIContext = {
+  input: any;
+  fetch: APIFetchType;
+};
+
+export type APIMutationType = {
+  fetchAPI: (context: FetchAPIContext) => any;
+  useAPIHook: (context: APIMutationContext) => (input: any) => any;
 };
 
 export function useAPIHookManager<H = undefined>(
-  cb: (apiHooks: H) => APIHookManagerCbReturnType
+  cb: (apiHooks: H) => APIMutationType
 ) {
   const { apiHooks } = useApiProvider();
 

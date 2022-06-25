@@ -5,7 +5,7 @@ const { withFrameworkConfig } = require("./src/utils/withFrameworkConfig");
 const nextConfig = withFrameworkConfig({
   reactStrictMode: true,
   framework: {
-    name: "shopify",
+    name: process.env.NEXT_PUBLIC_FRAMEWORK,
   },
   i18n: {
     locales: ["en-US", "es"],
