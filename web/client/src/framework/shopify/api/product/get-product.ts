@@ -1,9 +1,9 @@
 import { APIConfigType, APIVariables } from "@api";
-import { getProductQuery } from "@framework/graphql";
-import { normalizeProduct } from "@framework/helpers";
-// import { getProductQuery, normalizeProduct } from "@framework/utils";
-import { Product as ShopifyProduct } from "@framework/models";
+import { getProductQuery } from "@shopify/graphql";
+import { normalizeProduct } from "@shopify/helpers";
+// import { getProductQuery, normalizeProduct } from "@shopify/utils";
 import { Product } from "@models/product";
+import { Product as ShopifyProduct } from "@shopify/models";
 
 type FetchType = {
   productByHandle: ShopifyProduct;
@@ -24,9 +24,7 @@ export const getProductAPI = async (
   const { config, variables } = options;
 
   const { data } = await config.apiFetch<FetchType>({
-    url: config.apiUrl,
     query: getProductQuery,
-    method: "POST",
     variables,
   });
 

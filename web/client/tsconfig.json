@@ -18,8 +18,8 @@
       "@hooks/*": ["src/hooks/*"],
       "@models": ["src/models"],
       "@models/*": ["src/models/*"],
-      "@framework": ["src/framework/shopify"],
-      "@framework/*": ["src/framework/shopify/*"],
+      "@shopify": ["src/framework/shopify"],
+      "@shopify/*": ["src/framework/shopify/*"],
       "@styles": ["src/styles"],
       "@styles/*": ["src/styles/*"]
     },

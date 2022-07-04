@@ -7,9 +7,9 @@ export type APIFetchType<T = unknown> = (
 ) => Promise<APIFetchResults<T>>;
 
 export interface APIConfigType {
-  apiUrl: string;
   apiFetch: APIFetchType;
-  apiHooks?: APIHooksType;
+  apiHooks: APIHooksType;
+  checkoutCookie: string;
 }
 
 export class APIConfig {

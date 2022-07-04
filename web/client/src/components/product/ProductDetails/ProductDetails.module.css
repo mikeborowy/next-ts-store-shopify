@@ -78,7 +78,7 @@
 .button {
   text-align: center;
   width: 100%;
-  max-width: 300px;
+  max-width: 100px;
 
   @screen sm {
     min-width: 300px;

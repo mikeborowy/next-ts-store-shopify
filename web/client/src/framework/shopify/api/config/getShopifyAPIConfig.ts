@@ -1,11 +1,11 @@
 import { APIConfig, fetchAPI } from "@api";
-import { shopifyApiHooks } from "@framework/hooks";
-import { API_URL } from "../../../../constants/api-url";
+import { shopifyApiHooks } from "@shopify/hooks";
+import { SHOPIFY_CHECKOUT_ID_COOKIE } from "../../../../constants";
 
 const shopifyConfig = new APIConfig({
-  apiUrl: API_URL,
   apiFetch: fetchAPI,
   apiHooks: shopifyApiHooks,
+  checkoutCookie: SHOPIFY_CHECKOUT_ID_COOKIE,
 });
 
 export function getShopifyAPIConfig() {

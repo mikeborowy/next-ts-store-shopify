@@ -41,7 +41,7 @@ export type UseDataContext = {
   swrOptions: any;
 };
 
-export type UseData<Data> = (context: UseDataContext) => Data;
+export type UseDataType<Data> = (context: UseDataContext) => Data;
 
 export type SWRHookResponse<Data> = SWRResponse<Data, any> & {
   isEmpty: boolean;
@@ -50,8 +50,8 @@ export type SWRHookResponse<Data> = SWRResponse<Data, any> & {
 export type SWRHook<H extends HookDescriptor = any> = {
   fetchOptions: HookFetcherOptions;
   fetch: HookFetchFn<H["fetchInput"], H["fetchOutput"], H["data"]>;
-  useHook(context: {
-    useData: UseData<SWRHookResponse<H["data"]>>;
+  useSWRHook(context: {
+    useData: UseDataType<SWRHookResponse<H["data"]>>;
   }): () => SWRHookResponse<H["data"]>;
 };
 

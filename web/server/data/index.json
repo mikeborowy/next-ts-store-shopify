@@ -1,5 +1,364 @@
 {
-  "checkout": {},
+  "checkout": {
+    "id": "test_id_checkout",
+    "__typename": "Checkout",
+    "webUrl": "test_webUrl",
+    "subtotalPriceV2": {
+      "amount": 250,
+      "currencyCode": "EUR"
+    },
+    "totalTaxV2": {
+      "amount": "0.0",
+      "currencyCode": "EUR"
+    },
+    "totalPriceV2": {
+      "amount": 250,
+      "currencyCode": "EUR"
+    },
+    "completedAt": null,
+    "createdAt": "2021-06-02T22:32:40Z",
+    "taxesIncluded": true,
+    "lineItems": [
+      {
+        "variantId": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC80MDQxNjM4NTE3MTY0Mw==",
+        "quantity": 4,
+        "id": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC80MDQxNjM4NTE3MTY0Mw==__LI",
+        "title": "T-Shirt",
+        "variant": {
+          "id": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC80MDQxNjM4NTE3MTY0Mw==",
+          "productId": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzY4NjUyNzk2ODA2OTk=",
+          "title": "m / #000000",
+          "sku": "",
+          "selectedOptions": [
+            {
+              "name": "Size",
+              "value": "m"
+            },
+            {
+              "name": "Color",
+              "value": "#000000"
+            }
+          ],
+          "priceV2": {
+            "amount": "50.0",
+            "currencyCode": "EUR"
+          },
+          "compareAtPriceV2": {
+            "amount": "30.0",
+            "currencyCode": "EUR"
+          },
+          "image": {
+            "originalSrc": "Men-TShirt-Black-Front__70046.1603748348.png",
+            "altText": "",
+            "width": 2048,
+            "height": 2048
+          }
+        },
+        "product": {
+          "__typename": "Product",
+          "id": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzY4NjUyNzk2ODA2OTk=",
+          "handle": "t-shirt",
+          "title": "T-Shirt",
+          "vendor": "EincodeTest",
+          "description": "This t-shirt is a must-have in your wardrobe, combining the timeless fit of a classic tee with an intricate embroidered detail that brings the shirt to a whole new level. It's soft and durable, so be prepared to have a new favorite t-shirt!",
+          "descriptionHtml": "<meta charset=\"utf-8\"><span data-mce-fragment=\"1\">This t-shirt is a must-have in your wardrobe, combining the timeless fit of a classic tee with an intricate embroidered detail that brings the shirt to a whole new level. It's soft and durable, so be prepared to have a new favorite t-shirt!</span><br data-mce-fragment=\"1\">",
+          "priceRange": {
+            "minVariantPrice": {
+              "amount": "50.0",
+              "currencyCode": "EUR"
+            },
+            "maxVariantPrice": {
+              "amount": "50.0",
+              "currencyCode": "EUR"
+            }
+          },
+          "options": [
+            {
+              "id": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0T3B0aW9uLzg3ODk0NjAxNTY2MDM=",
+              "name": "Size",
+              "values": [
+                "m",
+                "s"
+              ]
+            },
+            {
+              "id": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0T3B0aW9uLzg3ODk0NjAxODkzNzE=",
+              "name": "Color",
+              "values": [
+                "#000000"
+              ]
+            }
+          ],
+          "variants": [
+            {
+              "id": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC80MDQxNjM4NTE3MTY0Mw==",
+              "productId": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzY4NjUyNzk2ODA2OTk=",
+              "title": "m / #000000",
+              "sku": "",
+              "selectedOptions": [
+                {
+                  "name": "Size",
+                  "value": "m"
+                },
+                {
+                  "name": "Color",
+                  "value": "#000000"
+                }
+              ],
+              "priceV2": {
+                "amount": "50.0",
+                "currencyCode": "EUR"
+              },
+              "compareAtPriceV2": {
+                "amount": "30.0",
+                "currencyCode": "EUR"
+              },
+              "image": {
+                "originalSrc": "Men-TShirt-Black-Front__70046.1603748348.png",
+                "altText": "",
+                "width": 2048,
+                "height": 2048
+              }
+            },
+            {
+              "id": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC80MDQxNjM4NTIwNDQxMQ==",
+              "productId": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzY4NjUyNzk2ODA2OTk=",
+              "title": "s / #000000",
+              "sku": "",
+              "selectedOptions": [
+                {
+                  "name": "Size",
+                  "value": "s"
+                },
+                {
+                  "name": "Color",
+                  "value": "#000000"
+                }
+              ],
+              "priceV2": {
+                "amount": "50.0",
+                "currencyCode": "EUR"
+              },
+              "compareAtPriceV2": {
+                "amount": "30.0",
+                "currencyCode": "EUR"
+              }
+            }
+          ],
+          "images": [
+            {
+              "originalSrc": "Men-TShirt-Black-Front__70046.1603748348.png",
+              "altText": "",
+              "width": 2048,
+              "height": 2048
+            },
+            {
+              "originalSrc": "Men-TShirt-Black-Left-Side__72119.1603284781.png",
+              "altText": "",
+              "width": 2048,
+              "height": 2048
+            },
+            {
+              "originalSrc": "Men-TShirt-Black-Back__57266.1603748348.png",
+              "altText": "",
+              "width": 2048,
+              "height": 2048
+            },
+            {
+              "originalSrc": "Men-TShirt-White-Front__99616.1603284781.png",
+              "altText": "",
+              "width": 2048,
+              "height": 2048
+            },
+            {
+              "originalSrc": "Men-TShirt-White-Left-Side__69000.1603284781.png",
+              "altText": "",
+              "width": 2048,
+              "height": 2048
+            },
+            {
+              "originalSrc": "Men-TShirt-White-Back__33450.1603284781.png",
+              "altText": "",
+              "width": 2048,
+              "height": 2048
+            }
+          ]
+        }
+      },
+      {
+        "variantId": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC80MDQxNjM4NTIwNDQxMQ==",
+        "quantity": 1,
+        "id": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC80MDQxNjM4NTIwNDQxMQ==__LI",
+        "title": "T-Shirt",
+        "variant": {
+          "id": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC80MDQxNjM4NTIwNDQxMQ==",
+          "productId": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzY4NjUyNzk2ODA2OTk=",
+          "title": "s / #000000",
+          "sku": "",
+          "selectedOptions": [
+            {
+              "name": "Size",
+              "value": "s"
+            },
+            {
+              "name": "Color",
+              "value": "#000000"
+            }
+          ],
+          "priceV2": {
+            "amount": "50.0",
+            "currencyCode": "EUR"
+          },
+          "compareAtPriceV2": {
+            "amount": "30.0",
+            "currencyCode": "EUR"
+          },
+          "image": {
+            "originalSrc": "Men-TShirt-Black-Front__70046.1603748348.png",
+            "altText": "",
+            "width": 2048,
+            "height": 2048
+          }
+        },
+        "product": {
+          "__typename": "Product",
+          "id": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzY4NjUyNzk2ODA2OTk=",
+          "handle": "t-shirt",
+          "title": "T-Shirt",
+          "vendor": "EincodeTest",
+          "description": "This t-shirt is a must-have in your wardrobe, combining the timeless fit of a classic tee with an intricate embroidered detail that brings the shirt to a whole new level. It's soft and durable, so be prepared to have a new favorite t-shirt!",
+          "descriptionHtml": "<meta charset=\"utf-8\"><span data-mce-fragment=\"1\">This t-shirt is a must-have in your wardrobe, combining the timeless fit of a classic tee with an intricate embroidered detail that brings the shirt to a whole new level. It's soft and durable, so be prepared to have a new favorite t-shirt!</span><br data-mce-fragment=\"1\">",
+          "priceRange": {
+            "minVariantPrice": {
+              "amount": "50.0",
+              "currencyCode": "EUR"
+            },
+            "maxVariantPrice": {
+              "amount": "50.0",
+              "currencyCode": "EUR"
+            }
+          },
+          "options": [
+            {
+              "id": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0T3B0aW9uLzg3ODk0NjAxNTY2MDM=",
+              "name": "Size",
+              "values": [
+                "m",
+                "s"
+              ]
+            },
+            {
+              "id": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0T3B0aW9uLzg3ODk0NjAxODkzNzE=",
+              "name": "Color",
+              "values": [
+                "#000000"
+              ]
+            }
+          ],
+          "variants": [
+            {
+              "id": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC80MDQxNjM4NTE3MTY0Mw==",
+              "productId": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzY4NjUyNzk2ODA2OTk=",
+              "title": "m / #000000",
+              "sku": "",
+              "selectedOptions": [
+                {
+                  "name": "Size",
+                  "value": "m"
+                },
+                {
+                  "name": "Color",
+                  "value": "#000000"
+                }
+              ],
+              "priceV2": {
+                "amount": "50.0",
+                "currencyCode": "EUR"
+              },
+              "compareAtPriceV2": {
+                "amount": "30.0",
+                "currencyCode": "EUR"
+              },
+              "image": {
+                "originalSrc": "Men-TShirt-Black-Front__70046.1603748348.png",
+                "altText": "",
+                "width": 2048,
+                "height": 2048
+              }
+            },
+            {
+              "id": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0VmFyaWFudC80MDQxNjM4NTIwNDQxMQ==",
+              "productId": "Z2lkOi8vc2hvcGlmeS9Qcm9kdWN0LzY4NjUyNzk2ODA2OTk=",
+              "title": "s / #000000",
+              "sku": "",
+              "selectedOptions": [
+                {
+                  "name": "Size",
+                  "value": "s"
+                },
+                {
+                  "name": "Color",
+                  "value": "#000000"
+                }
+              ],
+              "priceV2": {
+                "amount": "50.0",
+                "currencyCode": "EUR"
+              },
+              "compareAtPriceV2": {
+                "amount": "30.0",
+                "currencyCode": "EUR"
+              },
+              "image": {
+                "originalSrc": "Men-TShirt-Black-Front__70046.1603748348.png",
+                "altText": "",
+                "width": 2048,
+                "height": 2048
+              }
+            }
+          ],
+          "images": [
+            {
+              "originalSrc": "Men-TShirt-Black-Front__70046.1603748348.png",
+              "altText": "",
+              "width": 2048,
+              "height": 2048
+            },
+            {
+              "originalSrc": "Men-TShirt-Black-Left-Side__72119.1603284781.png",
+              "altText": "",
+              "width": 2048,
+              "height": 2048
+            },
+            {
+              "originalSrc": "Men-TShirt-Black-Back__57266.1603748348.png",
+              "altText": "",
+              "width": 2048,
+              "height": 2048
+            },
+            {
+              "originalSrc": "Men-TShirt-White-Front__99616.1603284781.png",
+              "altText": "",
+              "width": 2048,
+              "height": 2048
+            },
+            {
+              "originalSrc": "Men-TShirt-White-Left-Side__69000.1603284781.png",
+              "altText": "",
+              "width": 2048,
+              "height": 2048
+            },
+            {
+              "originalSrc": "Men-TShirt-White-Back__33450.1603284781.png",
+              "altText": "",
+              "width": 2048,
+              "height": 2048
+            }
+          ]
+        }
+      }
+    ]
+  },
   "products": [
     {
       "__typename": "Product",
@@ -583,6 +942,12 @@
           "compareAtPriceV2": {
             "amount": "30.0",
             "currencyCode": "EUR"
+          },
+          "image": {
+            "originalSrc": "Men-TShirt-Black-Front__70046.1603748348.png",
+            "altText": "",
+            "width": 2048,
+            "height": 2048
           }
         }
       ],

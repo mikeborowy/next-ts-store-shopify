@@ -3,7 +3,7 @@ import { ProductSlider } from "@components/product";
 import { Button, StylingContainer, Swatch } from "@components/ui";
 import { useUI } from "@context/UIProvider";
 import { ChoiceType, getVariant } from "@helpers";
-import { useAddItem } from "@hooks";
+import { useCartAddItem } from "@hooks";
 import { Product } from "@models/product";
 import cn from "classnames";
 import Image from "next/image";
@@ -21,7 +21,7 @@ export const ProductDetails = ({ product }: ProductDetailsProps) => {
   const [isLoading, setIsLoading] = useState(false);
 
   const { onOpenSidebar } = useUI();
-  const addItem = useAddItem();
+  const addItem = useCartAddItem();
 
   const variant = getVariant(product, choices);
 
@@ -30,11 +30,11 @@ export const ProductDetails = ({ product }: ProductDetailsProps) => {
       const item = {
         productId: String(product.id),
         variantId: String(variant ? variant.id : product.variants[0].id),
+        variantOptions: variant?.options,
         quantity: 1,
       };
       setIsLoading(true);
-      // await addItem(item);
-      addItem(item);
+      await addItem(item);
       setIsLoading(false);
       onOpenSidebar();
     } catch {

@@ -1,6 +1,6 @@
 // import { shopifyHooks } from "./hooks"
 import { ApiProvider, useApiProvider } from "@context/ApiProvider";
-import { getShopifyAPIConfig } from "@framework/api";
+import { getShopifyAPIConfig } from "@shopify/api";
 import { ReactNode } from "react";
 
 const config = getShopifyAPIConfig();

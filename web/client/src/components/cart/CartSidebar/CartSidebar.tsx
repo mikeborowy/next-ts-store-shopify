@@ -1,16 +1,14 @@
+import { CartItem } from "@components/cart";
 import { Bag, Cross } from "@components/icons";
 import { Button } from "@components/ui";
 import { useUI } from "@context/UIProvider";
+import { useCart } from "@hooks";
+import { LineItem } from "@models";
 import cn from "classnames";
-import { useState } from "react";
-// import CartItem from "../CartItem";
 
 export const CartSidebar = () => {
   const { onCloseSidebar } = useUI();
-  // const { data, isEmpty } = useCart();
-
-  const [data, setData] = useState<any>();
-  const isEmpty = true;
+  const { data, isEmpty } = useCart();
 
   const rootClass = cn("h-full flex flex-col", {
     "bg-secondary text-secondary": isEmpty,
@@ -49,7 +47,7 @@ export const CartSidebar = () => {
             <h2 className="pt-1 pb-4 text-2xl leading-7 font-bold text-base tracking-wide inline-block">
               My Cart
             </h2>
-            {/* <ul className="py-6 space-y-6 sm:py-0 sm:space-y-0 sm:divide-y sm:divide-accents-3 border-t border-accents-3">
+            <ul className="py-6 space-y-6 sm:py-0 sm:space-y-0 sm:divide-y sm:divide-accents-3 border-t border-accents-3">
               {data?.lineItems.map((item: LineItem) => (
                 <CartItem
                   key={item.id}
@@ -57,7 +55,7 @@ export const CartSidebar = () => {
                   currencyCode={data.currency.code}
                 />
               ))}
-            </ul> */}
+            </ul>
           </div>
           <div className="flex-shrink-0 px-4  py-5 sm:px-6">
             <div className="border-t border-accents-3">

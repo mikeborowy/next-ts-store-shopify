@@ -4,13 +4,14 @@ import { createContext, ReactNode, useContext, useMemo } from "react";
 type ApiContextType = {
   apiFetch: APIFetchType;
   apiHooks: APIHooksType;
+  checkoutCookie: string;
 };
 
-export const ApiContext = createContext<Partial<ApiContextType>>({});
+export const ApiContext = createContext<ApiContextType | null>(null);
 
 interface ApiProviderProps {
   children: ReactNode;
-  config: Partial<APIConfigType>;
+  config: APIConfigType;
 }
 
 const ApiProvider = ({ children, config: configProps }: ApiProviderProps) => {
@@ -18,8 +19,9 @@ const ApiProvider = ({ children, config: configProps }: ApiProviderProps) => {
     return {
       apiFetch: configProps.apiFetch,
       apiHooks: configProps.apiHooks,
+      checkoutCookie: configProps.checkoutCookie,
     };
-  }, [configProps.apiFetch, configProps.apiHooks]);
+  }, [configProps.apiFetch, configProps.checkoutCookie, configProps.apiHooks]);
 
   return <ApiContext.Provider value={config}>{children}</ApiContext.Provider>;
 };
